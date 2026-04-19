@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAMELESS ROLEPLAY</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: url('https://images.unsplash.com/photo-1519501025264-65ba15a82390') no-repeat center/cover;
+}
+
+/* OVERLAY */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    z-index: -1;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFD700;
+    text-shadow: 0 0 15px #FFD700;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccc;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700;
+    text-shadow: 0 0 10px #FFD700;
+}
+
+/* DISCORD BUTTON */
+.discord-btn {
+    background: linear-gradient(45deg, #FFD700, #b89600);
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 15px #FFD700;
+}
+
+.discord-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #FFD700;
+}
+
+/* SECTION */
+section {
+    padding: 50px;
+    display: none;
+    animation: fade 0.5s ease;
+}
+
+section.active {
+    display: block;
+}
+
+@keyframes fade {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* TITLE */
+h2 {
+    color: #FFD700;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #FFD700;
+}
+
+/* CARD */
+.card {
+    background: rgba(20,20,20,0.9);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    border-left: 4px solid #FFD700;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255,215,0,0.6);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #FFD700;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #FFD700;
+    text-shadow: 0 0 20px #FFD700;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #ccc;
+}
+</style>
+</head>
+
+<body>
+
+<header>NAMELESS ROLEPLAY </header>
+
+<nav>
+<a href="#" onclick="showPage('home')">Beranda</a>
+<a href="#" onclick="showPage('rules')">Rules</a>
+<a href="#" onclick="showPage('faction')">Fraksi</a>
+<a href="https://discord.gg/w6DpJ9hky" target="_blank" class="discord-btn">Connect Discord</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="active">
+<div class="hero">
+<h1>Selamat Datang di Nameless Roleplay</h1>
+<p>Bangun karirmu. Kuasai kota. Jadilah legenda RP.</p>
+</div>
+
+<h2>Tentang Kota</h2>
+
+<div class="card">
+<p><b>NAMELESS ROLEPLAY</b> adalah kota roleplay yang menghadirkan pengalaman hidup virtual dengan sistem yang realistis, komunitas aktif, dan alur cerita tanpa batas.</p>
+
+<p>Di kota ini, setiap pemain memulai dari nol — tanpa nama besar, tanpa kekuasaan, hanya pilihan dan usaha yang menentukan siapa dirimu di masa depan.</p>
+
+<p>Bangun karirmu dari bawah, pilih jalan hidupmu, dan ciptakan cerita unikmu sendiri. Apakah kamu akan menjadi warga sipil yang sukses, penegak hukum yang disegani, atau bagian dari dunia gelap yang penuh risiko?</p>
+
+<p>NAMELESS bukan sekadar server — ini adalah dunia kedua tempat setiap keputusan memiliki konsekuensi.</p>
+</div>
+
+<div class="card">
+<h3>🌆 Fitur Kota</h3>
+<ul>
+<li>💼 Sistem pekerjaan realistis</li>
+<li>💰 Ekonomi hidup & dynamic</li>
+<li>🏠 Kepemilikan rumah & bisnis</li>
+<li>🚗 Kendaraan premium & import</li>
+<li>🎭 Roleplay bebas & story driven</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>👑 Visi Kota</h3>
+<p>Menciptakan komunitas roleplay yang solid, realistis, dan penuh cerita tanpa batas.</p>
+</div>
+</div>
+</section>
+
+<!-- RULES -->
+<section id="rules">
+<h2>📜 Rules Kota - NAMELESS ROLEPLAY</h2>
+
+<div class="card">
+<h3>1. Fear RP</h3>
+<p>Setiap player wajib menunjukkan rasa takut dalam situasi berbahaya. Bertindaklah seperti di kehidupan nyata.</p>
+</div>
+
+<div class="card">
+<h3>2. No Random Death Match (RDM)</h3>
+<p>Dilarang membunuh tanpa alasan Roleplay yang jelas dan valid.</p>
+</div>
+
+<div class="card">
+<h3>3. No Vehicle Death Match (VDM)</h3>
+<p>Dilarang menggunakan kendaraan untuk melukai atau membunuh player lain tanpa alasan RP.</p>
+</div>
+
+<div class="card">
+<h3>4. No Meta Gaming</h3>
+<p>Dilarang menggunakan informasi dari luar game ke dalam RP (Discord, stream, dll).</p>
+</div>
+
+<div class="card">
+<h3>5. No Power Gaming</h3>
+<p>Dilarang melakukan hal yang tidak realistis atau memaksa RP tanpa memberi kesempatan lawan.</p>
+</div>
+
+<div class="card">
+<h3>6. No Fail RP</h3>
+<p>Semua player wajib menjaga kualitas Roleplay agar tetap realistis dan masuk akal.</p>
+</div>
+
+<div class="card">
+<h3>7. Respect Semua Player</h3>
+<p>Dilarang toxic, menghina, atau merendahkan player lain di dalam maupun luar RP.</p>
+</div>
+
+<div class="card">
+<h3>8. New Life Rule (NLR)</h3>
+<p>Jika karakter mati, maka tidak boleh mengingat kejadian sebelum kematian tersebut.</p>
+</div>
+
+<div class="card">
+<h3>9. Character Kill (CK)</h3>
+<p>CK hanya bisa dilakukan dengan persetujuan admin atau melalui alur RP yang kuat.</p>
+</div>
+
+<div class="card">
+<h3>10. Ikuti Arahan Admin</h3>
+<p>Keputusan admin bersifat mutlak demi menjaga keseimbangan dan kenyamanan server.</p>
+</div>
+
+<div class="card">
+<h3>⚠️ Sanksi</h3>
+<p>Pelanggaran rules akan dikenakan sanksi mulai dari peringatan, jail, hingga banned permanen.</p>
+</div>
+</section>
+<!-- FRAKSI -->
+<section id="faction">
+<h2>Fraksi Kota</h2>
+
+<div class="card">
+<h3>🚔 Police</h3>
+<p>Penegak hukum kota.</p>
+</div>
+
+<div class="card">
+<h3>🚑 EMS</h3>
+<p>Tim medis.</p>
+</div>
+
+<div class="card">
+<h3>🔫Badside</h3>
+<p>Fraksi ilegal.</p>
+</div>
+
+</section>
+
+<footer>© 2026 NAMELESS ROLEPLAY</footer>
+
+<script>
+function showPage(pageId) {
+    let sections = document.querySelectorAll("section");
+    sections.forEach(sec => sec.classList.remove("active"));
+    document.getElementById(pageId).classList.add("active");
+}
+</script>
+
+</body>
+</html>
